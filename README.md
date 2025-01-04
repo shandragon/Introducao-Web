@@ -10,5 +10,6 @@ Repositório com material e exercícios apresentados durante as aulas práticas 
 ### Laboratórios
 
 - O [Laboratório 1](docs/laboratorios/Laboratorio01.pdf) é uma introdução ao html com a construção de uma página simples.
-- O [Laboratório 2](docs/laboratorios/Laboratorio02.pdf) apresenta sobre a construção de tabelas, links internos e elementos meta em um documento HTML
+- O [Laboratório 2](docs/laboratorios/Laboratorio02.pdf) apresenta sobre a construção de tabelas, links internos e elementos meta em um documento HTML.
+- No [Laboratório 3](docs/laboratorios/Laboratorio03.pdf) iremos realizar a construção de uma página HTML com alguns elementos semânticos.
 
