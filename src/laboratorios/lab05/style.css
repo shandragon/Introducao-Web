@@ -1,0 +1,38 @@
+div {
+    color: yellow;
+    background-color: blue;
+}
+
+#id-um {
+    color: blue;
+    background-color: yellow;
+}
+
+#id-dois {
+    width: 100px;
+    height: 100px;
+}
+
+.class-um {
+    background-color: green;
+    width: 50px;
+}
+
+.class-dois {
+    background-color: red;
+    width: 75px;
+}
+
+input {
+    border: solid 1px blue;
+    width: 100px;
+}
+
+input[type='password'] {
+    background-color: gray;
+}
+
+input[type='submit'] {
+    width: 200px;
+    border-radius: 10px;
+}

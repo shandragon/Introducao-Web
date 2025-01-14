@@ -2,6 +2,8 @@
 
 Repositório com material e exercícios apresentados durante as aulas práticas de introdução a HTML, CSS e Javascript.
 
+Os conceitos teóricos utilizados nos laboratórios serão apresentados em sala de aula.
+
 ## Estrutura do Repositório
 
 - Dentro do diretório **src** se encontra o código-fonte dos laboratórios e dos exercícios.
@@ -13,4 +15,5 @@ Repositório com material e exercícios apresentados durante as aulas práticas 
 - O [Laboratório 2](docs/laboratorios/Laboratorio02.pdf) apresenta sobre a construção de tabelas, links internos e elementos meta em um documento HTML.
 - No [Laboratório 3](docs/laboratorios/Laboratorio03.pdf) iremos realizar a construção de uma página HTML com alguns elementos semânticos.
 - O [Laboratório 4](docs/laboratorios/Laboratorio04.pdf) apresenta sobre a construção de um formulário que permite a coleta de dados do usuário.
+- O [Laboratório 5](docs/laboratorios/Laboratorio05.pdf) inicia a introdução ao CSS e seus seletores.
 
