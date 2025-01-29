@@ -1,20 +1,29 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
     background-color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
 header,
 footer {
+    flex-shrink: 0;
+    text-align: center;
     background: #89CFF0;
     color: white;
-    padding: 20px 10px;
-    text-align: center;
+    padding: 20px;
 }
 
 main {
+    height: auto;
+    overflow:hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px; /* Espaçamento entre os elementos */
     padding: 20px;
 }
 
@@ -37,8 +46,7 @@ label {
 }
 
 fieldset {
-    width: 60%;
-    max-width: 90%;
+    width: 80%;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -60,13 +68,11 @@ select {
 .radio-group {
     display: flex;
     align-items: center;
-    gap: 10px;
-    /* Espaçamento entre os elementos */
+    gap: 10px; /* Espaçamento entre os elementos */
 }
 
 .radio-group input[type="radio"] {
-    margin-right: 5px;
-    /* Espaçamento entre o botão de rádio e o rótulo */
+    margin-right: 5px; /* Espaçamento entre o botão de rádio e o rótulo */
 }
 
 .radio-group label {
@@ -79,6 +85,14 @@ select {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.select-group select {
+    width: 70%;
+}
+
+.select-group label {
+    margin: 1px;
 }
 
 button {
@@ -97,4 +111,44 @@ button {
 
 button:hover {
     background-color: #45a049; /* Cor de fundo ao passar o mouse */
+}
+
+#formulario {
+    height: 60vh; /* Define a altura do main para ocupar a altura total da viewport */
+    overflow:scroll;
+    flex: 0.5;
+    background: lightcyan;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#links {
+    height: 60vh; /* Define a altura do main para ocupar a altura total da viewport */
+    overflow:scroll;
+    flex: 0.5;
+    background: lightcyan;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.box-element {
+    text-align: center;
+    background-color: white;
+    margin: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.box-list {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-grid {
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
