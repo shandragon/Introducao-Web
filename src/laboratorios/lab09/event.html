@@ -16,7 +16,7 @@
   <main>
     <section id="opcoes">
       <h2>Eventos:</h2>
-      <div class="box-list">
+      <div class="box">
         <div class="box-element">
           <button onclick="alert('Clicou!')">Clique Aqui</button>
         </div>
@@ -27,33 +27,48 @@
           <button onclick="limparLivros()">Limpar livros</button>
         </div>
         <div class="box-element">
-          <h2>Opção 4</h2>
+          <div class="group-field">
+            <label>Adicionar filme:</label>
+            <input type="text" id="input-filme">
+            <button onclick="adicionarFilme()">Adicionar</button>
+          </div>
         </div>
         <div class="box-element">
-          <h2>Opção 5</h2>
+          <div class="group-field">
+            <label>Remover filme:</label>
+            <input type="text" id="input-filme-2">
+            <button onclick="removerFilme()">Remover</button>
+          </div>
         </div>
         <div class="box-element">
-          <h2>Opção 6</h2>
+          <button onclick="limparFilmes()">Limpar filmes</button>
         </div>
         <div class="box-element">
-          <h2>Opção 7</h2>
+          <div class="group-field">
+            <label>Digite uma mensagem:</label>
+            <input type="text" id="input-mensagem" onchange="imprimirMensagem()">
+          </div>
         </div>
         <div class="box-element">
-          <h2>Opção 8</h2>
-        </div>
-        <div class="box-element">
-          <h2>Opção 9</h2>
+          <div class="group-field">
+            <label>Digite uma mensagem:</label>
+            <input type="text" id="input-mensagem-2" onkeydown="imprimirMensagem2()">
+          </div>
         </div>
       </div>
     </section>
     <section id="painel">
       <div id="livros">
         <h2>Livros:</h2>
-        <p id="livro">Nenhuma informação disponível.</p>
+        <p>Nenhuma informação disponível.</p>
       </div>
       <div id="filmes">
         <h2>Filmes:</h2>
-        <p id="filme">Nenhuma informação disponível.</p>
+        <p>Nenhuma informação disponível.</p>
+      </div>
+      <div id="filmes">
+        <h2>Mensagem:</h2>
+        <p id="mensagem"></p>
       </div>
     </section>
   </main>
