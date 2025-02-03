@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <title>Página Formulário</title>
+  <link rel='stylesheet' type='text/css' href='style.css'>
+  <script src="form.js"></script>
+</head>
+
+<body onload="dadosRecebidos()">
+  <header>
+    <h1>Meu Formulário</h1>
+  </header>
+
+  <main>
+    <section id="formulario">
+      <form action="form.html" method="get">
+        <fieldset>
+          <legend>Dados Recebidos</legend>
+          <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" disabled>
+          </div>
+          <div class="linha">
+            <div>
+              <label for="nomeMae">Nome da mãe:</label>
+              <input type="text" id="nomeMae" name="nomeMae" disabled>
+            </div>
+            <div>
+              <label for="nomePai">Nome do pai:</label>
+              <input type="text" id="nomePai" name="nomePai" disabled>
+            </div>
+          </div>
+          <div class="linha">
+            <div>
+              <label for="cpf">CPF:</label>
+              <input type="text" id="cpf" name="cpf" disabled>
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" disabled>
+            </div>
+            <div>
+              <label for="estadoCivil">Estado Civil:</label>
+              <input type="text" id="estadoCivil" name="estadoCivil" disabled>
+            </div>
+          </div>
+          <div class="linha">
+            <div>
+              <label for="estado">Estado:</label>
+              <input type="text" id="estado" name="estado" disabled>
+            </div>
+            <div>
+              <label for="municipio">Muncipio:</label>
+              <input type="text" id="municipio" name="municipio" disabled>
+            </div>
+          </div>
+          <div class="linha">
+            <button id="btEnviar" type="submit">Voltar</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 20XX Minha Página. Todos os direitos reservados.</p>
+  </footer>
+</body>
+
+</html>
