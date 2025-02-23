@@ -2,9 +2,9 @@
 
 No desenvolvimento de software, especialmente em aplicações web, o trabalho é dividido em duas partes principais: frontend e backend. Essas duas áreas trabalham juntas para criar uma aplicação funcional e completa.
 
-O frontend é tudo o que o usuário vê e interage diretamente. É a parte da aplicação que roda no navegador (browser) e é responsável pela interface gráfica, design, e experiência do usuário.
+O frontend é tudo o que o usuário vê e interage diretamente. Trata-se da parte da aplicação que roda no cliente (client-side), geralmente em um navegador (browser), sendo responsável pela interface gráfica, design, e experiência do usuário.
 
-O backend é a parte que funciona no servidor. Ele é responsável por processar as requisições do usuário, acessar o banco de dados, e garantir que a lógica da aplicação funcione corretamente.
+O backend é a parte que funciona no servidor (server-side). Ele é responsável por processar as requisições do usuário, acessar o banco de dados, e garantir que a lógica da aplicação funcione corretamente.
 
 Em resumo, o frontend cuida da aparência e da interação do usuário. O backend cuida da lógica, processamento de dados e comunicação com o banco de dados. E juntos, eles formam uma aplicação completa, onde o frontend é a "cara" e o backend é o "cérebro".
 
