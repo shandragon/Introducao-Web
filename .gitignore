@@ -1,2 +1,8 @@
 # Log file
 *.log
+
+# Ignorar bibliotecas do Node.js
+node_modules/
+
+# db file
+*.db
