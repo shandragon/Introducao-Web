@@ -68,3 +68,42 @@ app.post('/jogos', (req, res) => {
   fs.writeFileSync(arquivo, JSON.stringify(jogos));
   res.status(201).send(novoJogo);
 });
+
+app.put('/jogos/:id', (req, res) => {
+  let data = fs.readFileSync(arquivo);
+  let jogos = JSON.parse(data);
+  let novoValor = req.body;
+
+  let jogo = jogos.find(jogo => {
+    if (jogo.id == req.params.id) {
+      jogo.nome = novoValor.nome;
+      jogo.categoria = novoValor.categoria;
+      jogo.ano = novoValor.ano;
+      fs.writeFileSync(arquivo, JSON.stringify(jogos));
+      return jogo;
+    }
+  });
+
+  if (jogo) {
+    res.send(jogo);
+  } else {
+    res.status(404).send('Jogo não encontrado.');
+  }
+});
+
+app.delete('/jogos/:id', (req, res) => {
+  let data = fs.readFileSync(arquivo);
+  let jogos = JSON.parse(data);
+
+  // Verifica se algum jogo foi removido
+  if (!jogos.find(jogo => jogo.id == req.params.id)) {
+    return res.status(404).send('Jogo não encontrado.');
+  }
+
+  // Filtra o array para remover o jogo com o id especificado
+  let jogosAtualizados = jogos.filter(jogo => jogo.id != req.params.id);
+
+  // Escreve o array atualizado de volta no arquivo
+  fs.writeFileSync(arquivo, JSON.stringify(jogosAtualizados));
+  res.send('Jogo removido com sucesso.');
+});
