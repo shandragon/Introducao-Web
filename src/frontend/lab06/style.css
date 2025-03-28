@@ -14,6 +14,10 @@ footer {
     text-align: center;
 }
 
+footer p {
+    margin: 0;
+}
+
 nav ul {
     padding: 0;
 }
@@ -48,10 +52,6 @@ aside {
     background: #eaeaea;
     padding: 15px;
     border-radius: 5px;
-}
-
-footer p {
-    margin: 0;
 }
 
 .content {
