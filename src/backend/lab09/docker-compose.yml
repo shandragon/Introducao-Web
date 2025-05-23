@@ -1,0 +1,47 @@
+services:
+  mysql:
+    image: mysql:latest
+    container_name: sd-bd
+    restart: "no"
+    ports:
+      - "3309:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: jogo_api
+      TZ: "America/Bahia"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 10s
+      retries: 3
+    networks:
+      sd-network:
+        ipv4_address: 172.23.0.2
+
+  nodejs: 
+    build:
+      context: .
+      dockerfile: Dockerfile 
+    image: nodejs:latest
+    container_name: sd-app
+    restart: "no"
+    ports:
+      - "3000:3000"
+    working_dir: /app
+    volumes:
+      - ./:/app
+    networks:
+      sd-network:
+        ipv4_address: 172.23.0.3
+    depends_on:
+      mysql:
+        condition: service_healthy
+      
+
+#Docker Networks 
+networks:
+  sd-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.23.0.0/24
