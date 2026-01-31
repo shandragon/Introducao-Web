@@ -24,7 +24,21 @@ Os conceitos teóricos utilizados nos laboratórios serão apresentados em sala 
 - No [Laboratório 3](docs/frontend/Laboratorio03.pdf) iremos realizar a construção de uma página HTML com alguns elementos semânticos.
 - O [Laboratório 4](docs/frontend/Laboratorio04.pdf) apresenta sobre a construção de um formulário que permite a coleta de dados do usuário.
 - O [Laboratório 5](docs/frontend/Laboratorio05.pdf) inicia a introdução ao CSS e seus seletores.
+- O [Laboratório 6](docs/frontend/Laboratorio06.pdf) apresenta layouts responsivos e uso de colunas com CSS.
+- O [Laboratório 7](docs/frontend/Laboratorio07.pdf) aborda formulários avançados e sistemas de grid.
+- O [Laboratório 8](docs/frontend/Laboratorio08.pdf) introduz JavaScript básico e manipulação do DOM.
+- O [Laboratório 9](docs/frontend/Laboratorio09.pdf) apresenta eventos e interatividade com JavaScript.
+- O [Laboratório 10](docs/frontend/Laboratorio10.pdf) aborda submissão de formulários e validação de dados.
 
 ### Backend
 
+- O [Laboratório 1](docs/backend/Laboratorio01.pdf) é uma introdução ao JavaSCript com o NodeS.
+- O [Laboratório 2](docs/backend/Laboratorio02.pdf) apresenta os conceitos de _falsy_ e _truthy_, operadores lógicos e vetores em JavaScript.
+- O [Laboratório 3](docs/backend/Laboratorio03.pdf) apresenta funções e manipulação de objetos JSON em JavaScript.
+- O [Laboratório 4](docs/backend/Laboratorio04.pdf) introduz a criação de servidores web com Node.js.
+- O [Laboratório 5](docs/backend/Laboratorio05.pdf) aborda rotas e middlewares em aplicações Node.js.
+- O [Laboratório 6](docs/backend/Laboratorio06.pdf) apresenta integração com bancos de dados SQL.
+- O [Laboratório 7](docs/backend/Laboratorio07.pdf) introduz DAOs (Data Access Objects) e modelos de dados.
+- O [Laboratório 8](docs/backend/Laboratorio08.pdf) apresenta controladores e arquitetura MVC.
+- O [Laboratório 9](docs/backend/Laboratorio09.pdf) aborda containerização de aplicações com Docker.
 
